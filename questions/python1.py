@@ -192,7 +192,18 @@ print(result3)
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
 def six(string, int, char):
-	return False
+	string = string.lower()
+	string = string.replace(" ", "")
+	if int > len(string):
+		return False
+	return string[int-1] == char
+result1 = six("The",2,'h')
+result2 = six("AAbb",1,'b')
+result3 = six("Hi-There",10,'e')
+print(result1)
+print(result2)
+print(result3)
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
