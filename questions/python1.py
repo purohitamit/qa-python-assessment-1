@@ -226,7 +226,19 @@ print(result3)
 	# Take a look at the documentation for Strings, List and range.
 
 def seven(inputString, char):
-	return -1
+	inputString = inputString.replace(' ', '')
+	if char not in inputString:
+		return -1
+	else:
+		position = inputString.index(char) + 1
+	
+	return position
+result1 = seven("This is a Sentence","s")
+result2 = seven("This is a Sentence","S")
+result3 = seven("Fridge for sale","z")
+print(result1)
+print(result2)
+print(result3)
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
