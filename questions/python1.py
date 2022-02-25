@@ -108,7 +108,17 @@ print(result4)
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def three(input):
-    return 0
+    res = input.lower()
+    vowel_total = 0
+    for letter in "aeiou":
+        vowel_total += res.count(letter)
+
+    return vowel_total
+result1 = three("Hello")
+result2 = three("Helloeoeoeoeoeo")
+print(result1)
+print(result2)
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
