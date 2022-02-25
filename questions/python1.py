@@ -292,8 +292,21 @@ def eight(arg1):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
-	return ""
-
+	input = input.lower()
+	bert = input.count("bert")
+	if bert <= 1:
+		return ("")
+	else:
+		input = input.split("bert")
+	return input[1]
+result1 = nine("bertclivebert")
+result2 = nine("xxbertfridgebertyy")
+result3 = nine("xxBertfridgebERtyy")
+result4 = nine("xxbertyy")
+print(result1)
+print(result2)
+print(result3)
+print(result4)
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 10>
