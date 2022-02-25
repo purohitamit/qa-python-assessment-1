@@ -73,8 +73,24 @@ print(result2)
 	# No hints for this question
 
 def two(arg1):
-	return "null"
+	if arg1 % 3 == 0 and arg1 % 5 == 0:
+		res = "fizbuzz"
+	elif arg1 % 3 == 0:
+		res = "fizz"
+	elif arg1 % 5 == 0:
+		res = "buzz"
+	else:
+		res = "null"
 
+	return res
+result1 = two(3)
+result2 = two(10)
+result3 = two(15)
+result4 = two(7)
+print(result1)
+print(result2)
+print(result3)
+print(result4)
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 3>
